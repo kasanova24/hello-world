@@ -1,2 +1,2 @@
 # hello-world
-web developer/designer
+just another repository
