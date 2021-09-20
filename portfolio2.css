@@ -1,0 +1,1227 @@
+body
+{
+    margin: 0;
+    padding: 0;    
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.head
+{
+    position: relative;
+    background: transparent;
+    height: 630px;
+    margin-top: -15px;
+}
+.head .head-nav .nav 
+{
+    position: relative;
+    height:50px;
+    top: -5px;
+    width: 1310px;
+    background-color: purple;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 2);
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .head .head-nav .nav
+    {
+        height: 30px;
+    }
+}
+.head .head-nav .nav li
+{
+    position: relative;
+    list-style: none;
+    display: inline;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 100%;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .head .head-nav .nav li
+    {
+        padding: 3px;
+    }
+    
+}
+.head-nav .nav li a
+{
+    position: relative;
+    left: 45rem;
+    height: 30px;
+    width: 50px;
+    text-decoration: none;
+    padding: 8px;
+    color: violet;
+}
+@media (min-width: 375px) and (max-width: 425px)
+{
+    .head .head-nav .nav li a
+    {
+        left: 130px;
+        font-size: 13px;
+        padding: 0;
+    }
+}
+.head-nav .loader
+{
+    position: relative;
+    height: 50px;
+    width: 140px;
+    bottom: 66px;
+    left: 15px;
+    display: flex;
+    align-content: center;
+}
+.head-nav .loader h2
+{
+    position: relative;
+    bottom: 7px;
+    transition: .5s;
+    animation: animate 3s linear infinite;
+    animation-delay: 2s white;
+}
+@keyframes animate {
+    0%,18%,20%,50.1%,60.1%,65.1%,80%,90.1%,92%
+    {
+        color: transparent;
+        text-shadow: none;
+    }
+    18.1%,20.1%,50%,60%,65%,80.1%,90%,92.1%,100%
+    {
+        color: white;
+        text-shadow: 0 0 3px violet,
+        0 0 20px violet,
+        0 0 40px violet,
+        0 0 80px violet,
+        0 0 160px violet;
+    }
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .head-nav .loader h2
+    {
+        font-size: large;
+        top: 5px;
+        right: 10px;
+    }
+}
+.head-nav .nav li a:hover
+{
+    border-radius: 3px;
+    background: white;
+    color: rgb(1, 154, 255);
+    transition: .5s;
+    text-shadow: 0 0 3px #00eeff,
+    0 0 20px #00eeff,
+    0 0 40px #00eeff,
+    0 0 80px #00eeff,
+    0 0 160px #00eeff;
+    box-shadow: 0 0 3px #00eeff,
+    0 0 20px #00eeff,
+    0 0 40px #00eeff,
+    0 0 80px #00eeff,
+    0 0 160px #00eeff;
+}
+.head .head-intro img
+{
+    position: relative;
+    width: 350px;
+    left: 200px;
+    top: 50px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .head .head-intro img
+    {
+        width: 230px;
+        top: -25px;
+        left: 110px;
+    }
+}
+.head .head-intro .opening
+{
+    position: absolute;
+    left: 49rem;
+    top: 280px;
+}
+@media (min-width: 360px) and (max-width:425px)
+{
+    .head .head-intro .opening
+    {
+        left: 5%;
+        top: 220px;
+    }
+}
+.head-intro .opening .hit
+{
+    color: violet;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .5s;
+    animation: typing1 3s steps(27) forwards;
+}
+@keyframes typing1
+{
+    0%
+    {
+        width: 0px;
+    }
+    100%
+    {
+        width: 390px;
+    }
+}
+.head .opening h1 span
+{
+    padding-left: 11px;
+    color: blue;
+}
+.dropdown
+{
+    position: absolute;
+    bottom: 100%;
+}
+.dropdown .dropdown-nav span
+{
+    position: absolute;
+    display: inline;
+    color: violet;
+    padding: 8px;
+    left: 81rem;
+    top: 5px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .dropdown .dropdown-nav span
+    {
+        left: 145px;
+        top: -2px;
+        font-size: smaller;
+    }
+}
+
+.dropdown span:hover
+{
+    background: whitesmoke;
+    color: rgb(1, 154, 255);
+    transition: .5s;
+    text-shadow: 0 0 3px #00eeff,
+    0 0 20px #00eeff,
+    0 0 40px #00eeff,
+    0 0 80px #00eeff,
+    0 0 160px #00eeff;
+    box-shadow: 0 0 3px #00eeff,
+    0 0 20px #00eeff,
+    0 0 40px #00eeff,
+    0 0 80px #00eeff,
+    0 0 160px #00eeff;
+}
+.nav-side
+{
+    position: absolute;
+    left: 71rem;
+    top: 70px;
+    background-color: #dd6933;
+    background-color: purple;
+    height: 500px;
+    width: 200px;
+    border-radius: 2px;
+    display: none;
+    border-radius: 5px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .nav-side
+    {
+        left: 100px;
+        width: 150px;
+        height: 340px;
+        top: 55px;
+    }
+}
+.nav-side::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent transparent purple transparent;
+    top: -30px;
+    left: 158px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .nav-side::before 
+    {
+        left: 38%;
+        top: -30px;
+    }
+} 
+.nav-side img
+{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 40px;
+    right: 55px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .nav-side img
+    {
+        width: 60px;
+        height: 60px;
+        top: 25px;
+        right: 40px;
+    }
+}
+.nav-side #name
+{
+    position: relative;
+    top: 30%;
+    left: 19px;
+    color: blue;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .nav-side #name
+    {
+        font-size: medium;
+        top: 25%;
+        left: 25px;
+    }
+}
+.nav-side .icons
+{
+    display: flex;
+    position: relative;
+    top: 30%;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .nav-side .icons
+    {
+        right: 20px;
+        top: 20%;
+    }
+}
+.nav-side .icons li 
+{
+    display: inline; 
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-side .icons li a:hover
+{
+    position: relative;
+    bottom: 2px;
+    box-shadow: 3px 5px 2px #292823;
+}
+.icons #first
+{
+    color: white;
+    background-color: blue;
+    padding: 3px;
+}
+.icons #second
+{
+    color: blue;
+    background-color: white;
+    padding: 3px;
+}
+.icons #third
+{
+    color: rgb(9, 153, 209);
+    background-color: white;
+    padding: 3px;
+}
+.navbar 
+{
+    position: absolute;
+    list-style: none;
+    display: block;
+    bottom: 40px;
+    left: 15px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .navbar
+    {
+        left: -15px;
+        top: 140px;
+    }
+}
+.navbar li
+{
+    padding: 10px;
+
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .navbar li 
+    {
+        margin-bottom: 5px;
+    }
+}
+.navbar li a:hover
+{
+    position: relative;
+    background-color: indigo;
+    color: white;
+    padding: 3px;
+}
+.navbar li a
+{
+    position: relative;
+    text-decoration: none;
+    color: violet;
+    transition: .5s;
+}
+.about-menu
+{
+    position: absolute;
+    top: 40rem;
+    width: 1200px;
+    height: 73rem;
+    left: 80px;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgb(133, 133, 133);
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .about-menu 
+    {
+        top: 25rem;
+        width: 85%;
+        left: 35px;
+        height: 128rem;
+    }
+}
+.about-menu .dd_about
+{
+    position: absolute;
+    left: 30rem;
+    font-size: 1.5rem;
+    color: purple;
+    background-color: transparent;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .about-menu .dd_about
+    {
+        left: 100px;
+    }
+}
+.dd_about h2
+{
+    box-shadow: 2px 2px 12px violet;
+}
+.dd_about h2:hover
+{
+    box-shadow: 2px 2px 12px rgb(133, 133, 133);
+    background-color: violet;
+    transition: 1s;
+    color: white;
+}
+.swiper-container
+{
+    position: relative;
+    left: 130px;
+    width: 300px;
+    height: 300px;
+    top: 180px;
+    
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+   .swiper-container
+   {
+       width: 250px;
+       height: 250px;
+       left: 17%;
+       top: 100px;
+   } 
+}
+.swiper-container .swiper-slide
+{
+    background: whitesmoke;
+}
+.swiper-slide .imgBx img
+{
+    width: 300px;
+    height: 300px;
+    /* display: none; */
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .swiper-slide .imgBx img
+    {
+        width: 250px;
+        height: 250px;
+    }
+} 
+.abt-opening
+{
+    position: absolute;
+    top: 10rem;
+    left: 500px;
+    background: violet;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .abt-opening
+    {
+        left: 0;
+        top: 25rem;
+        margin: 10px;
+    }
+}
+.abt-opening p
+{
+    color: rgb(255, 255, 255);
+    font-family: 'Lobster', cursive;
+    padding: 0 10px;
+}
+.abt-opening p:hover
+{
+    color: purple;
+}
+.abt-opening p span
+{
+    color: blue;
+}
+.abt-opening p #HTML
+{
+    color: orangered;
+}
+.abt-opening p #CSS
+{
+    color: yellow;
+}
+.abt-opening p #JS
+{
+    color: rgb(3, 104, 199);
+}
+.flipcard
+{
+    position: relative;
+    top: 400px;
+    width: 54.5rem;
+    height: 350px;
+    left: 160px;
+    background: purple;
+    padding: 0;
+    margin:0;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .flipcard
+    {
+        left: 10px;
+        width: 95%;
+        top: 750px;
+        height: 64rem;
+    }
+}
+.flipcard .wrapper
+{
+    position: relative;
+    left: 47px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+
+}
+.flipcard .firstcard  
+{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    top: 15px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+
+}
+.firstcard:hover
+{
+    transform: rotateY(180deg);
+}
+.firstcard .flip-front
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.firstcard .flip-front img
+{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.flip-abt .flip-pdata
+{
+    position: relative;
+    left: 40px;
+    top: 30px;
+    color: purple;
+}
+
+.firstcard .flip-back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: violet;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+.firstcard .flip-back img
+{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.firstcard .flip-back .flip-name
+{
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+    color: white;
+}
+.firstcard .flip-back .flip-name:hover
+{
+    color: purple;
+}
+.flip-myinfo .basicinfo li
+{
+    padding: 5px;
+    color: white;
+    display: block;
+}
+.flip-myinfo .basicinfo li:hover
+{
+    color: purple;
+}
+.flip-myinfo .basicinfo li #eadd1
+{
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.flip-myinfo .basicinfo li #eadd2
+{
+    position: relative;
+    left: 17px;
+    margin-left: 5px;
+    font-weight: bolder;
+}
+.flip-myinfo .basicinfo li #num
+{
+    font-weight: bolder;
+    margin-left: 3px;
+}
+.firstcard .flip-back .basicinfo
+{
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+    list-style: none;
+}
+.firstcard .flip-back .soc-med
+{
+    position: relative;
+    bottom: 30px;
+    right: 15px;
+    list-style: none;
+}
+.soc-med li a:hover
+{
+    border-radius: 50%;
+    transition: .5s;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+}
+.firstcard .flip-back .soc-med li
+{
+    position: relative;
+    display: inline-flex;
+    margin: 15px;
+}
+.flip-back .fb a
+{
+    position: relative;
+    color: white;
+    background: blue;
+    padding: 10px;
+}
+.firstcard .flip-back .linked a
+{
+    color: white;
+    background: indigo;
+    padding: 10px;
+    font-weight: bolder;
+    
+}
+.firstcard .flip-back .mess a
+{
+    color: blue;
+    background: white;
+    padding: 10px;
+    
+}
+.flipcard .secondcard  
+{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    top: 15px;
+    left: 17rem;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .flipcard .secondcard
+    {
+        top: 350px;
+        left: 0;
+    }
+}
+.secondcard:hover
+{
+    transform: rotateY(180deg);
+}
+.secondcard .flip-front
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    border-radius: 10px;
+}
+.secondcard .flip-front img
+{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.flip-abt .flip-ks
+{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    color: purple;
+}
+.secondcard .flip-back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: violet;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.flip-back .hard-skills img
+{
+    position: relative;
+    top: 5px;
+    width: 50%;
+    height: 50%;
+    right: 30px;
+}
+.flip-back .hard-skills h3
+{
+    position: relative;
+    left: 85px;
+    bottom: 85px;
+    color: white;
+    text-decoration: underline;
+}
+.flip-back .hard-skills h3:hover
+{
+    color: purple;
+}
+.flip-back .hard-skills li
+{
+    position: relative;
+    bottom: 90px;
+    right: 10px;
+    color: white;
+    margin: 0;
+}
+.flip-back .hard-skills li:hover
+{
+    color: purple;
+}
+.flip-back .hard-skills ul
+{
+    margin: 0;
+}
+.flip-back .hard-skills li h4
+{
+    display: flex;
+    margin: 0;
+    color: white;
+}
+.flip-back .hard-skills li h4:hover
+{
+    color: purple;
+}
+.flipcard .thirdcard  
+{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    top: 15px;
+    left: 34rem;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .flipcard .thirdcard
+    {
+        left: 0;
+        top: 43rem;
+    }
+}
+.thirdcard:hover
+{
+    transform: rotateY(180deg);
+}
+.thirdcard .flip-front
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    border-radius: 10px;
+}
+.thirdcard .flip-front img
+{
+    width: 100%;
+    height: 47%;
+    border-radius: 10px 10px 0 0;
+}
+.flip-abt .flip-soft
+{
+    position: relative;
+    left: 75px;
+    top: 33px;
+    color: purple;
+}
+.thirdcard .flip-back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: violet;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+.thirdcard .flip-back h3
+{
+    position: relative;
+    left: 65px;
+    text-decoration: underline;
+    display: block;
+    align-items: end;
+    color: white;
+}
+.thirdcard .flip-back h3:hover
+{
+    color: purple;
+}
+.thirdcard .flip-back img
+{
+    position: relative;
+    left: 113px;
+    bottom: 90px;
+    width: 50%;
+    height: 50%;
+}
+.soft-skills li
+{
+    color: white;
+    position: relative;
+    bottom: 70px;
+}
+.soft-skills li:hover
+{
+    color: purple;
+}
+.soft-skills li h4
+{
+    margin: 0;
+}
+.flip-abt .flip-mproj
+{
+    position: relative;
+    left: 60px;
+    top: 33px;
+    color: purple;
+}
+.Portfolio
+{
+    position: absolute;
+    background: whitesmoke;
+    top: 114rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgb(133, 133, 133);
+    width: 1200px;
+    height: 50%;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .Portfolio
+    {
+        top: 154rem;
+        width: 85%;
+        left: 35px;
+        height: 30rem;
+    }
+}
+.Portfolio .Portfolio-wrapper
+{
+    position: relative;
+    width: 100%;
+    bottom: 185px;
+    right: 70px;
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    animation: animate1 5s linear infinite;
+}
+@keyframes animate1 {
+    0%
+    {
+        transform: translate(0%) rotate(-20deg);
+    }
+    100%
+    {
+        transform: translate(5%) rotate(-20deg);
+    }
+}
+.Portfolio .Portfolio-bg
+{
+    position: relative;
+    width: 100%;
+    display: inline;
+    padding: 10px 0;
+    font-size: 34px;
+}
+.Portfolio-bg i
+{
+    color: whitesmoke;
+    user-select: none;
+    cursor: default;
+    font-size: 24px;
+    transition: 1s;
+}
+.Portfolio-bg i:hover
+{
+    color: violet;
+    text-shadow: 2px 2px 12px  violet;
+    transition: 0s;
+}
+.Portfolio .portfolio-title
+{
+    position: absolute;
+    top: 43%;
+    left: 150px;
+    background: whitesmoke;
+    border: 1px purple;
+    border-radius: 2px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .Portfolio .portfolio-title
+    {
+        top: 3%;
+        left: 25%;
+    }
+}
+.portfolio-title.reveal
+{
+    /* position: relative; */
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.portfolio-title.reveal.active
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.Portfolio .portfolio-name
+{
+    position: relative;
+    color: purple;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+.Portfolio .container-links
+{
+    position: absolute;
+    top: 10%;
+    left: 45rem;
+    height: 80%;
+    width: 22rem;
+    background: violet;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .Portfolio .container-links
+    {
+        left: 0;
+        width: 94%;
+        margin: 10px;
+        height: 70%;
+    }
+}
+.Portfolio .container-links .file-links 
+{
+    margin: 20px 5px 0 5px;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .Portfolio .container-links .file-links
+    {
+        margin: 20px 5px 0 0;
+    }
+}
+.container-links .file-links:hover
+{
+    background-color: rgb(202, 165, 245);
+}
+.Portfolio .container-links .file-links img
+{
+    width: 310px;
+    height: 150px;
+    margin:20px 0 0 15px ;
+}
+.Portfolio .container-links .file-links a
+{
+    margin: 30px 0 0 33% ;
+
+}
+.contacts-and-emails
+{
+   position: absolute;
+   top: 135rem; 
+   border-radius: 10px;
+   box-shadow: 2px 2px 12px rgb(133, 133, 133);
+   width: 1200px;
+   left: 80px;
+   background: whitesmoke;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .contacts-and-emails
+    {
+        top: 185rem;
+        width: 85%;
+        left: 35px;
+        height: 70rem;
+    }
+}
+.contacts-and-emails .container
+{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .contacts-and-emails .container
+    {
+        display: block;
+    }
+}
+.contacts-and-emails video
+{
+    width: 75rem;    
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .contacts-and-emails video
+    {
+        width: 100%;
+    }
+} 
+.contacts-and-emails .contactinfo-cont
+{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    font-family: 'Kanit', sans-serif;
+    color: purple;
+}
+.contacts-and-emails img
+{
+    width: 50px;
+}
+.contacts-and-emails .container .contact-cont
+{
+    margin-right: 30px;
+    background-color: violet;
+    color: white;
+    width: 30rem;
+    height: 15rem;
+    padding: 0 0 10px 70px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 50%;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .contacts-and-emails .container .contact-cont
+    {
+        width: 18rem;
+        margin-left: 1px;
+        height: 21rem;
+    }
+}
+.contacts-and-emails .container .contact-cont:hover
+{
+    background: violet;
+    color: black;
+    animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
+}
+.contacts-and-emails .container .emails-cont:hover
+{
+    background: violet;
+    color: black;
+    animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
+}
+@keyframes pulse
+{
+    
+    0%{box-shadow: 0 0 0 violet;}
+    25%{box-shadow: 0 0 0 10px rgba(238, 130, 238, 0.397);}
+    50%{box-shadow: 0 0 0 20px rgba(238, 130, 238, 0.397);}
+    75%{box-shadow: 0 0 0 30px rgba(238, 130, 238, 0.397);}
+    100%{box-shadow: 0 0 0 40px rgba(238, 130, 238, 0.397);}
+}
+.contacts-and-emails .container .contact-cont div
+{
+    padding: 5px;
+}
+.contacts-and-emails .container .contact-cont i
+{
+    margin-right: 10px;
+}
+.contacts-and-emails .container .contact-cont .mobile-num i
+{
+    color: white;
+    background-color: blue;
+}
+.contacts-and-emails .container .contact-cont .viber i
+{
+    color: purple;
+    background-color: white;
+}
+.contacts-and-emails .container .contact-cont .messenger i
+{
+    color: white;
+    background-color: blue;
+}
+.contacts-and-emails .container .emails-cont
+{
+    background-color: violet;
+    color: white;
+    width: 30rem;
+    height: 15rem;
+    padding: 0 0 0 70px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 50%;
+}
+@media (min-width: 360px) and (max-width: 425px)
+{
+    .contacts-and-emails .container .emails-cont
+    {
+        width: 18rem;
+        margin: 10px 0 0 1px;
+        height: 21rem;
+    }
+}
+.contacts-and-emails .container .emails-cont i
+{
+    margin-right: 10px;
+}
+.contacts-and-emails .container .emails-cont .fb i
+{
+    background-color: white;
+    border-radius: 50%;
+    color: blue;
+}
+.contacts-and-emails .container .emails-cont .linkedin i
+{
+    padding: 3px; 
+    background-color: blue;
+    color: white;
+}
+.contacts-and-emails .container .emails-cont .yahoo i
+{
+    padding: 3px; 
+    background-color: rgb(38, 21, 116);
+    color: white;
+}
+.contacts-and-emails .container .emails-cont div
+{
+    padding: 1px;
+}
+.contacts-and-emails .container .emails-cont span
+{
+    padding-bottom: 10px;
+}
+.contacts-and-emails .container .title
+{
+    color: purple;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.contacts-and-emails .container img
+{
+    width: 30px;
+}
+.reveal
+{
+    /* position: relative; */
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
